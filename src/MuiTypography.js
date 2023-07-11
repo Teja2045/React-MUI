@@ -3,32 +3,32 @@ import { Typography } from '@mui/material'
 const MuiTypography = () => {
   return (
     <div>
-      <Typography variant='h1'>
+      <Typography variant='h1' gutterBottom>
         one
       </Typography>
       <Typography variant='h2'>
-        one
+        two
       </Typography>
       <Typography variant='h3'>
-        one
+        three
       </Typography>
       <Typography variant='h4'>
-        one
+        four
       </Typography>
       <Typography variant='h5'>
-        one
+        five
       </Typography>
-      <Typography variant='subtitle2'>
-        one
+      <Typography variant='subtitle2' component='h1'>
+        sub2
       </Typography>
       <Typography variant='subtitle1'>
-        one
+        sub1
       </Typography>
       <Typography variant='body1'>
-        one hgsgdhdsa
+        one hgsgdhdsa b1
       </Typography>
       <Typography variant='body2'>
-        one dsjskajdgkjgds
+        one dsjskajdgkjgds b2
       </Typography>
     </div>
   )
