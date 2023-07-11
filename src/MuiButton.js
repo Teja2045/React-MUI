@@ -64,7 +64,7 @@ const MuiButton = () => {
       <Stack spacing={2} direction="row">
         <Button variant="contained" startIcon={<SendIcon/>}>Send</Button>
         <IconButton color="success" size='small' aria-label="send"> <SendIcon/></IconButton>
-        <Button disableElevation disableRipple variant="contained" endIcon={<SendIcon/>}>Send</Button>
+        <Button disableElevation={true} disableRipple variant="contained" endIcon={<SendIcon/>}>Send</Button>
       </Stack>
     </Stack>
   );
