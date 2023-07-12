@@ -3,6 +3,9 @@ import MuiTypography from './MuiTypography';
 import MuiButton from './MuiButton';
 import MUITextField from './MUITextField';
 import MuiSelect from './MuiSelect';
+import MuiRadio from './MuiRadio';
+import MuiCheckBox from './MuiCheckBox';
+
 function App() {
   return (
     <div className="App">
@@ -10,6 +13,8 @@ function App() {
       <MuiButton/>
       <MUITextField/>
       <MuiSelect/>
+      <MuiRadio/>
+      <MuiCheckBox/>
     </div>
     
   );
