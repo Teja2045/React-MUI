@@ -1,8 +1,22 @@
-import React from "react";
-import { Stack, Button, IconButton } from "@mui/material";
+import React, { useState } from "react";
+import {
+  Stack,
+  Button,
+  IconButton,
+  ToggleButton,
+  ToggleButtonGroup,
+} from "@mui/material";
+import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
+import FormatBoldIcon from "@mui/icons-material/FormatBold";
+import FormatItalicIcon from "@mui/icons-material/FormatItalic";
 import SendIcon from "@mui/icons-material/Send";
 
 const MuiButton = () => {
+  const [format, setFormat] = useState(null)
+  console.log(format);
+  const handleChange = (e, uf) => {
+    setFormat(uf);
+  }
   return (
     <Stack spacing={4}>
       <Stack spacing={2} direction="row">
@@ -62,9 +76,34 @@ const MuiButton = () => {
         </Button>
       </Stack>
       <Stack spacing={2} direction="row">
-        <Button variant="contained" startIcon={<SendIcon/>}>Send</Button>
-        <IconButton color="success" size='small' aria-label="send"> <SendIcon/></IconButton>
-        <Button disableElevation={true} disableRipple variant="contained" endIcon={<SendIcon/>}>Send</Button>
+        <Button variant="contained" startIcon={<SendIcon />}>
+          Send
+        </Button>
+        <IconButton color="success" size="small" aria-label="send">
+          {" "}
+          <SendIcon />
+        </IconButton>
+        <Button
+          disableElevation={true}
+          disableRipple
+          variant="contained"
+          endIcon={<SendIcon />}
+        >
+          Send
+        </Button>
+      </Stack>
+      <Stack direction="row">
+        <ToggleButtonGroup exclusive size="large" color="secondary" aria-label="text formatting" value={format} onChange={handleChange}>
+          <ToggleButton value="italic" aria-label="italic">
+            <FormatItalicIcon />
+          </ToggleButton>
+          <ToggleButton value="bold" aria-label="bold">
+            <FormatBoldIcon />
+          </ToggleButton>
+          <ToggleButton value="underlined" aria-label="underlined">
+            <FormatUnderlinedIcon />
+          </ToggleButton>
+        </ToggleButtonGroup>
       </Stack>
     </Stack>
   );
