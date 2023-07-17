@@ -68,3 +68,32 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+### Notes
+
+#### Switch 
+- example dark mode
+#### Rating 
+- can be added different icons
+
+#### Autocomplete
+- works like a select 
+- but will have auto complete while inputing the value
+- will have Textfield as InputRender
+- can add freeSole prop to have unknown option
+
+#### Box
+- layout, wrapper component
+
+#### Stack
+- layout component
+- spacing - number * 8 pixels
+- direction - ["row", "column", "row-reverse"...]
+- divider 
+

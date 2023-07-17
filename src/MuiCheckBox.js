@@ -33,7 +33,7 @@ const MuiCheckBox = () => {
       <Box>
         <FormControl>
           <FormLabel>Skills</FormLabel>
-          <FormGroup va>
+          <FormGroup>
             <FormControlLabel
               label="Java"
               control={
